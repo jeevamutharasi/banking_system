@@ -22,52 +22,22 @@
         <p>Taking Banking Technology to Common Man, Your Tech-friendly bank, Your Own Bank</p>
       </div>
     </div>
-
-    <div class="container">
-        <h1 class="display-5 fw-bold">Login</h1>
-        <form name="myForm" action="form.php" method="post" onsubmit="return validateForm()">
-            <div class="mb-3 mt-3">
-              <label for="email" class="form-label">Email:</label>
-              <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
-            </div>
-            <div class="mb-3">
-              <label for="pwd" class="form-label">Password:</label>
-              <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pass">
-            </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
-          </form>
+    <div class="column activity text-center" >
+      <br>
+      <h3>Choose an Action</h3>   
+      <div class="col-md act">
+        <br>
+        <a id="mybtn" class="btn btn-info" href="view.php" role="button">View Customer</a>
+      </div>
+      <div class="col-md act" >
+        <br>
+        <a id="mybtn" class="btn btn-info" href="history.php" role="button">Transaction History</a>
+      </div>
     </div>
-    <div>
-        Not Registered? <a href="">Sign up</a>
-    </div>
+    <br>
   <footer>
     &copy; Banking System | All Right Reserved | Belongs to Jeevamutharasi    
   </footer>
   </body>
-
-  <script>
-      function validateForm() {
-          let x = document.forms["myForm"]["email"].value;
-          let y = document.forms["myForm"]["pass"].value;
-          let a="";
-
-    if (x == "") {
-        a+="Email must be filled out.\n";
-    }
-    if (y == "") {
-        a+="Password must be filled out.\n";
-    }
-    if(a==""){
-        alert(x);
-        alert(y);
-        return true;
-    }
-    else{
-        alert("There are some errors:\n"+a);
-        return false;
-    }
-  
-  }
-  </script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
 </html>
